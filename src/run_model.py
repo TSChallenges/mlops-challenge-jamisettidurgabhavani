@@ -23,8 +23,8 @@ def get_customer_input():
     credit_card = int (input("Enter 0/1 if credit card is there 1 or 0 if no: "))
     active_member = int(input("Enter 0/1 if active member 1 or 0 if no: "))
     estimated_salary = float(input("Enter estimated salary: "))
-    tenure = int(input("Enter tenure: "))
-    return [[credit_score, age, balance, products_number, credit_card, active_member, estimated_salary, tenure]]
+    tenures = int(input("Enter tenure: "))
+    return [[credit_score, age, balance, products_number, credit_card, active_member, estimated_salary, tenures]]
 
 def predict_churn(model, customer_data):
     prediction = model.predict(customer_data)
